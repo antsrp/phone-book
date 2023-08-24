@@ -48,7 +48,7 @@ class NoteStorage:
     # Функция, возвращает количество записей на странице вывода
     @property
     def count_pages(self) -> int:
-        return (self.count // self.pages_count) + 1
+        return (self.count - 1) // self.pages_count + 1 if self.count > 0 else 0
 
     # Сохранение записей в файл
     def save(self):
