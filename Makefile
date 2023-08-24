@@ -1,5 +1,5 @@
 run:
-	python main.py
+	@python main.py
 
 install:
-	pip install -r requirements.txt
+	@pip install -r requirements.txt
